@@ -1,12 +1,7 @@
 # palindrome_iterative.py asks the user for a string and determines if it is palindromic using an iterative function
 
-# import re library for using regular expressions
-import re
-
-def strip_whitespace_and_punctuation_and_make_lowercase(phrase):
-    """remove all characters except for alphabetical letters from a string and make lowercase"""
-    phrase = re.sub(r'[^A-Za-z]', '', phrase)
-    return phrase.lower()
+# import function for cleaning strings
+from string_cleaner import strip_whitespace_and_punctuation_and_make_lowercase
 
 def check_if_palindrome_iteratively(phrase):
     """return True if the string is a palindrome by checking iteratively"""
